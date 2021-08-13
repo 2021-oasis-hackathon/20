@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "860917917068",
+    "firebase_url": "https://funcollsexy-default-rtdb.firebaseio.com",
+    "project_id": "funcollsexy",
+    "storage_bucket": "funcollsexy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860917917068:android:baa926f22e0976c445e2a9",
+        "android_client_info": {
+          "package_name": "com.example.funcoolsex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860917917068-8i4h4cugnc0l8lkq9rmq8ftobkrdpkuf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4Dtt23gpS8KBCT4Qx41sopihSuMMm-ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860917917068-8i4h4cugnc0l8lkq9rmq8ftobkrdpkuf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "860917917068-2td319cntdfviih5c3l1lrv8v9l9qapa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.funcoolsex"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

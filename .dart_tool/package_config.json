@@ -50,6 +50,30 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "firebase_core",
+      "rootUri": "file:///Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.5.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "firebase_core_platform_interface",
+      "rootUri": "file:///Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "firebase_core_web",
+      "rootUri": "file:///Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.2.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "firebase_database",
+      "rootUri": "file:///Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database-4.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///Users/leejeongseok/development/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -58,6 +82,18 @@
     {
       "name": "flutter_test",
       "rootUri": "file:///Users/leejeongseok/development/flutter/packages/flutter_test",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_web_plugins",
+      "rootUri": "file:///Users/leejeongseok/development/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -78,6 +114,18 @@
       "rootUri": "file:///Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "plugin_platform_interface",
+      "rootUri": "file:///Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "quiver",
+      "rootUri": "file:///Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
     },
     {
       "name": "sky_engine",
@@ -140,7 +188,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-08-13T12:11:05.341356Z",
+  "generated": "2021-08-13T18:42:36.004582Z",
   "generator": "pub",
   "generatorVersion": "2.13.4"
 }
