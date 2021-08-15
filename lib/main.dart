@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'Home.dart';
+import 'firebase.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,6 +12,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
