@@ -9,7 +9,7 @@ class user {
   String toString() => name;
 
 
-  fromJson(Map<String, dynamic> json) {
+  fromJson(Map<dynamic, dynamic> json) {
     id = json['id'];
     name = json['name'];
     imageURL = json['imageURL'];
@@ -59,14 +59,14 @@ class trable {
     reviewList = <review>[];
   }
 
-  fromJson(Map<String, dynamic> json) {
-     trableName = json['trableName'];
-     owner = json['owner'];
-     location = json['location'];
-     tema = json['tema'];
-     totalRating = json['totalRating'];
-     placeList = json['placeList'];
-     reviewList = json['reviewList'];
+  trable.fromJson(Map<dynamic, dynamic> json) {
+     this.trableName = json['trableName'];
+     this.owner = json['owner'];
+     this.location = json['location'];
+     this.tema = json['tema'];
+     this.totalRating = json['totalRating'];
+     this.placeList = json['placeList'];
+     this.reviewList = json['reviewList'];
   }
 
   Map<String, dynamic> toJson() {
@@ -118,7 +118,7 @@ class place {
   String toListItem() => '{ ${this.name}, ${this.imageURL}, ${this.musicURL}, ${this.spotURL}, ${this.explanation}, }';
 
 
-  fromJson(Map<String, dynamic> json) {
+  fromJson(Map<dynamic, dynamic> json) {
     imageURL = json['imageURL'];
     name = json['name'];
     musicURL = json['musicURL'];
@@ -146,7 +146,7 @@ class review {
 
   String toString() => reviewString;
 
-  fromJson(Map<String, dynamic> json) {
+  fromJson(Map<dynamic, dynamic> json) {
     rating = json['rating'];
     reviewString = json['reviewString'];
   }
