@@ -39,7 +39,7 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context){
     return Scaffold(
       body: TabBarView(
-          controller: controller,// 컨트롤러 연결
+          controller: controller, // 컨트롤러 연결
           children: [
             search.Search(),
             theme.Theme(),
