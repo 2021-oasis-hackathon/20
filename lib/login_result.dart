@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:funcoolsex/model.dart';
 import 'package:kakao_flutter_sdk/all.dart';
 
 import 'package:kakao_flutter_sdk/user.dart';
+
+import 'Bloc.dart';
 
 class LoginResult extends StatefulWidget {
   @override
@@ -49,9 +52,9 @@ class _LoginResultState extends State<LoginResult> {
         child: Center(
           child: Column(
             children: [
-              Text(nickName),
-              Text(email),
-              (imageURL == 'None') ? Text("none") : Image.network(imageURL),
+              Text(kakaoUser!.name),
+              Text(kakaoUser!.email),
+              (imageURL == 'None') ? Text("none") : Image.network(kakaoUser!.imageURL),
             ],
           ),
         ),

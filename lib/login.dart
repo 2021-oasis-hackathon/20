@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:funcoolsex/Bloc.dart';
+import 'package:funcoolsex/main.dart';
 import 'package:funcoolsex/login_result.dart';
+import 'package:funcoolsex/model.dart';
 
 // Import kakao sdk
 import 'package:kakao_flutter_sdk/auth.dart';
@@ -41,8 +44,14 @@ class _LoginState extends State<LoginScreen> {
     try {
       var token = await AuthApi.instance.issueAccessToken(authCode);
       AccessTokenStore.instance.toStore(token);
+      User user = await UserApi.instance.me();
+      kakaoUser = new KakaoUser(user.kakaoAccount.email.toString(),
+          user.kakaoAccount.profile.toJson()['nickname'].toString(),
+          user.kakaoAccount.profile.toJson()['thumbnail_image_url'].toString());
       Navigator.push(context,
-        MaterialPageRoute(builder: (context) => LoginResult()),);
+        MaterialPageRoute(builder: (context) => MaterialApp(
+            home: MyTabs()
+        )),);
     } catch (e) {
       print("error on issuing access token: $e");
     }
@@ -58,10 +67,6 @@ class _LoginState extends State<LoginScreen> {
     isKakaoTalkInstalled();
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Kakao Flutter SDK Login"),
-        actions: [],
-      ),
       body: Center(
         child: Column(
         children: <Widget>[
@@ -72,25 +77,22 @@ class _LoginState extends State<LoginScreen> {
           ),
           InkWell(
               child: Image.asset('image/kakaologin.png', width: 220, height: 40),
-              onTap: ()=> !_isKakaoTalkInstalled ? _loginWithKakao : _loginWithTalk
+              onTap: ()=> !_isKakaoTalkInstalled ? _loginWithKakao() : _loginWithTalk()
           ),
-
-
         ],
         )),
       );
   }
 
   Future<void> retryAfterUserAgrees(List<String> requiredScopes) async {
-    // Getting a new access token with current access token and required scopes.
     String authCode = await AuthCodeClient.instance.requestWithAgt(requiredScopes);
     AccessTokenResponse token = await AuthApi.instance.issueAccessToken(authCode);
     AccessTokenStore.instance.toStore(token);
-    // Store access token in AccessTokenStore for future API requests.
   }
 
 
   _loginWithKakao() async {
+    print("카카오 설치안됨");
     try {
       var code = await AuthCodeClient.instance.request();
       User user = await UserApi.instance.me();
@@ -104,6 +106,7 @@ class _LoginState extends State<LoginScreen> {
   }
 
   _loginWithTalk() async {
+    print("카카오 설치됨");
     try {
       var code = await AuthCodeClient.instance.requestWithTalk();
       User user = await UserApi.instance.me();
