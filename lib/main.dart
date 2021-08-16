@@ -3,9 +3,6 @@ import 'package:flutter/cupertino.dart';
 import '/search.dart' as search;
 import '/theme.dart' as theme;
 import '/trend.dart' as trend;
-//import 'package:firebase_database/firebase_database.dart';
-//import 'firebase.dart';
-//import '/my_screen.dart' as my_screen;
 
 void main() => runApp(MaterialApp(home: MyTabs()));
 
@@ -21,13 +18,10 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
   // 컨트롤러는 TabBar와 TabBarView 객체를 생성할 때 직접 전달
   late TabController controller;
 
-
-
   // 객체가 위젯 트리에 추가될 때 호출되는 함수. 즉, 그려지기 전에 탭바 컨트롤러 샛성.
   @override
   void initState(){
     super.initState();
-
     // SingleTickerProviderStateMixin를 상속 받아서
     // vsync에 this 형태로 전달해야 애니메이션이 정상 처리된다.
     controller = TabController(vsync: this, length: 3);
@@ -44,19 +38,17 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context){
     return Scaffold(
-
       body: TabBarView(
-          controller: controller,                     // 컨트롤러 연결
+          controller: controller, // 컨트롤러 연결
           children: [
             search.Search(),
             theme.Theme(),
             trend.Trend(),
-
           ]
       ),
       bottomNavigationBar: Container(
         child: TabBar(
-            controller: controller,                 // 컨트롤러 연결
+            controller: controller,// 컨트롤러 연결
             tabs: [
               // 아이콘은 글자 수 같은 걸로 선택. 의미 없음. 제목에 들어간 색상은 중요.
               Tab(icon: Icon(Icons.card_travel), text: '검색'),
