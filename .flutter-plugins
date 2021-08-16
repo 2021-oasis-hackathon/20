@@ -2,3 +2,12 @@
 firebase_core=/Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.5.3/
 firebase_core_web=/Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.2.1+1/
 firebase_database=/Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database-4.4.0/
+kakao_flutter_sdk=/Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/kakao_flutter_sdk-0.5.4/
+package_info=/Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/package_info-0.4.3+4/
+path_provider_linux=/Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-0.0.1+2/
+path_provider_windows=/Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-0.0.5/
+shared_preferences=/Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.12+4/
+shared_preferences_linux=/Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_linux-0.0.2+4/
+shared_preferences_macos=/Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-0.0.1+11/
+shared_preferences_web=/Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-0.1.2+7/
+shared_preferences_windows=/Users/leejeongseok/development/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_windows-0.0.2+3/
