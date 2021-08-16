@@ -21,10 +21,10 @@ class firebaseState extends State<fireBaseHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    var test1 = trable("lee1","test1","test","test");
-    var test2 = trable("lee2","test2","test","test");
-    var test3 = trable("lee3","test3","test","test");
-    var testupdate = trable("lee2","update","update","update");
+    var test1 = travel("lee1","test1","test","test");
+    var test2 = travel("lee2","test2","test","test");
+    var test3 = travel("lee3","test3","test","test");
+    var testupdate = travel("lee2","update","update","update");
 
     var placeItem = place("name", "imageURL", "musicURL", "spotURL", "explanation");
     var reviewItem = review("rating", "reviewString");
@@ -44,22 +44,31 @@ class firebaseState extends State<fireBaseHomePage> {
               stream: trableDB.onValue,
               builder: (context, AsyncSnapshot<Event> snap){
                 if(!snap.hasData) return Text("로딩");
-                return Text(snap.data!.snapshot.value.toString());
+
+                List<Widget> widgetList = <Widget>[];
+                travel tr = new travel("1", "trableName", "location", "tema");
+                Map<String, dynamic> mapOfMaps = Map<String, dynamic>.from(snap.data!.snapshot.value);
+                mapOfMaps.entries.forEach((element) {
+                  tr = new travel.fromJson(element.value);
+                  widgetList.add(Text(tr.toString()));
+                });
+
+                return Column(children: widgetList);
               },
             ),
             FlatButton(onPressed: () => {
-                insertTrable(test1),
-                insertTrable(test2),
-                insertTrable(test3),
+                insertTrableData(test1),
+                insertTrableData(test2),
+                insertTrableData(test3),
             }, child: Text("insert")),
             FlatButton(onPressed: () => {
-              Read("test")
+              // Read()
             }, child: Text("read")),
             FlatButton(onPressed: () => {
-              Update(testupdate,"test1")
+              UpdateTrableDataFromName(testupdate,"test1")
             }, child: Text("update")),
             FlatButton(onPressed: () => {
-              Delete("tests")
+              DeleteTrableDataFromName("test1")
             }, child: Text("delete"))
           ],
         ),

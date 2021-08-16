@@ -29,15 +29,15 @@ class user {
 //여행 테마를 가진 클래스
 //trable을 list에 넣어주는 함수 생성해야함
 //review를 list에 넣어주는 함수 생성해야함.
-class trable {
+class travel {
   //여행의 이름 (key)
-  dynamic trableName;
+  dynamic travelName;
   //여행을 만든 사람 ID
   dynamic owner;
   //지역
   dynamic location;
   //테마
-  dynamic tema;
+  dynamic theme;
   //평균 평점
   dynamic totalRating;
   //각각 가리고 있는 장소 정보, 리뷰 리스트
@@ -53,17 +53,17 @@ class trable {
   }
 
   //여행 생성자
-  trable(this.owner, this.trableName, this.location, this.tema){
+  travel(this.owner, this.travelName, this.location, this.theme){
     totalRating = 0;
     placeList = <place>[];
     reviewList = <review>[];
   }
 
-  trable.fromJson(Map<dynamic, dynamic> json) {
-     this.trableName = json['trableName'];
+  travel.fromJson(Map<dynamic, dynamic> json) {
+     this.travelName = json['trableName'];
      this.owner = json['owner'];
      this.location = json['location'];
-     this.tema = json['tema'];
+     this.theme = json['tema'];
      this.totalRating = json['totalRating'];
      this.placeList = json['placeList'];
      this.reviewList = json['reviewList'];
@@ -73,10 +73,10 @@ class trable {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     Map<String, dynamic> reviewListMap = new Map<String, dynamic>();
     Map<String, dynamic> placeListMap = new Map<String, dynamic>();
-    data['trableName'] = this.trableName;
+    data['trableName'] = this.travelName;
     data['owner'] = this.owner;
     data['location'] = this.location;
-    data['tema'] = this.tema;
+    data['tema'] = this.theme;
     data['totalRating'] = this.totalRating;
 
     for(int i= 0 ;i <placeList.length;i++) {
@@ -94,7 +94,7 @@ class trable {
     return data;
   }
 
-  String toString() => trableName;
+  String toString() => travelName;
 
 }
 
@@ -112,7 +112,6 @@ class place {
   dynamic explanation;
 
   place(this.name, this.imageURL, this.musicURL, this.spotURL, this.explanation);
-
 
   String toString() => name;
   String toListItem() => '{ ${this.name}, ${this.imageURL}, ${this.musicURL}, ${this.spotURL}, ${this.explanation}, }';
