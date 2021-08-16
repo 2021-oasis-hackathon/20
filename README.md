@@ -1,4 +1,4 @@
-# funcoolsex
+# funcoolsexy
 
 음악을 들으며 여행을 할 수 있는 app
 
