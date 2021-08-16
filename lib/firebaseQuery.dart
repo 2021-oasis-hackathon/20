@@ -48,7 +48,7 @@ DeleteTrableDataFromName(String name) {
 // void insertTrable(trable trable) => trableDB.child(trable.toString()).get(trable.toJson());
 
 ///유저를 넣는 함수
-void insertUser(user user) => userdb.child(user.toString()).set(user.toJson());
+void insertUser(KakaoUser kakaoUser) => userdb.child(kakaoUser.toString()).set(kakaoUser.toJson());
 
 ///유저를 교체하는 함수
-void updateUser(user user) => userdb.child(user.name);
+void updateUser(KakaoUser kakaoUser) => userdb.child(kakaoUser.name);

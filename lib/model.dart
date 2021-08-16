@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 //유저 정보를 담고 있는 클래스
-class user {
-  dynamic id;
+class KakaoUser {
+  dynamic email;
   dynamic name;
   dynamic imageURL;
 
@@ -10,20 +10,20 @@ class user {
 
 
   fromJson(Map<dynamic, dynamic> json) {
-    id = json['id'];
+    email = json['id'];
     name = json['name'];
     imageURL = json['imageURL'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
+    data['id'] = this.email;
     data['name'] = this.name;
     data['imageURL'] = this.imageURL;
     return data;
   }
 
-  user(this.id, this.name, this.imageURL);
+  KakaoUser(this.email, this.name, this.imageURL);
 }
 
 //여행 테마를 가진 클래스
