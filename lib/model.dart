@@ -60,13 +60,13 @@ class travel {
   }
 
   travel.fromJson(Map<dynamic, dynamic> json) {
-     this.travelName = json['trableName'];
-     this.owner = json['owner'];
-     this.location = json['location'];
-     this.theme = json['tema'];
-     this.totalRating = json['totalRating'];
-     this.placeList = json['placeList'];
-     this.reviewList = json['reviewList'];
+    this.travelName = json['trableName'];
+    this.owner = json['owner'];
+    this.location = json['location'];
+    this.theme = json['tema'];
+    this.totalRating = json['totalRating'];
+    this.placeList = json['placeList'];
+    this.reviewList = json['reviewList'];
   }
 
   Map<String, dynamic> toJson() {
@@ -159,4 +159,3 @@ class review {
 
   review(this.rating, this.reviewString);
 }
-

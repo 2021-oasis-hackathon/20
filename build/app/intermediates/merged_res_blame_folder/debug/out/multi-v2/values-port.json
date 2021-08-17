@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/leejeongseok/development/FunCoolSexy/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "outputFile": "C:\\Users\\game0\\StudioProjects\\FunCoolSexy3\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/b5acbaaff5ebc6feb852e584cda0bf93/appcompat-1.0.2/res/values-port/values-port.xml",
+                    "source": "C:\\Users\\game0\\.gradle\\caches\\transforms-2\\files-2.1\\b5acbaaff5ebc6feb852e584cda0bf93\\appcompat-1.0.2\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
