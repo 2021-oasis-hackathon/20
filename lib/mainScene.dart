@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '/search.dart' as search;
-import '/theme.dart' as theme;
+import '/theme_search.dart' as theme;
 import '/trend.dart' as trend;
 
 
@@ -22,7 +22,7 @@ class MainSceneState extends State<MainScene> with SingleTickerProviderStateMixi
 
     // SingleTickerProviderStateMixin를 상속 받아서
     // vsync에 this 형태로 전달해야 애니메이션이 정상 처리된다.
-    controller = TabController(vsync: this, length: 3);
+    controller = TabController(vsync: this, length: 4);
   }
 
   // initState 함수의 반대.
@@ -41,7 +41,7 @@ class MainSceneState extends State<MainScene> with SingleTickerProviderStateMixi
           controller: controller,                     // 컨트롤러 연결
           children: [
             search.SearchWidget(),
-            theme.Theme(),
+            theme.ThemesearchWidget(),
             trend.TrendWidget(),
 
           ]
@@ -54,6 +54,7 @@ class MainSceneState extends State<MainScene> with SingleTickerProviderStateMixi
               Tab(icon: Icon(Icons.card_travel), text: '검색'),
               Tab(icon: Icon(Icons.donut_small), text: '테마',),
               Tab(icon: Icon(Icons.table_chart), text: '트렌드'),
+              Tab(icon: Icon(Icons.table_chart), text: '마이페이지')
             ]
         ),
         color: Colors.blueGrey,
