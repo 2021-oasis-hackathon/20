@@ -4,20 +4,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'firebaseQuery.dart';
 import 'model.dart';
+import 'Bloc.dart';
 
 DatabaseReference userdb = new FirebaseDatabase().reference().child("user");
 DatabaseReference trableDB = new FirebaseDatabase().reference().child("trable");
 
 class fireBaseHomePage extends StatefulWidget {
   fireBaseHomePage({Key? key, required this.title}) : super(key: key);
-
   final String title;
-
   @override
   firebaseState createState() => firebaseState();
 }
 
 class firebaseState extends State<fireBaseHomePage> {
+
+  var path = "test";
 
   @override
   Widget build(BuildContext context) {
@@ -25,9 +26,6 @@ class firebaseState extends State<fireBaseHomePage> {
     var test2 = travel("lee2","test2","test","test");
     var test3 = travel("lee3","test3","test","test");
     var testupdate = travel("lee2","update","update","update");
-
-    var placeItem = place("name", "imageURL", "musicURL", "spotURL", "explanation");
-    var reviewItem = review("rating", "reviewString");
 
     return Scaffold(
       appBar: AppBar(
@@ -69,12 +67,29 @@ class firebaseState extends State<fireBaseHomePage> {
             }, child: Text("update")),
             FlatButton(onPressed: () => {
               DeleteTrableDataFromName("test1")
-            }, child: Text("delete"))
+            }, child: Text("delete")),
+            StreamBuilder(
+              stream: streamController.stream,
+              builder: (context, AsyncSnapshot<String> snap) {
+                print('print ${snap.data}');
+                return (snap.hasData)
+                    ? Image.network(
+                      snap.data!,
+                      loadingBuilder: (context,child,progress) {
+                        return progress == null ? child : CircularProgressIndicator();
+                      },
+                    )
+                    : Text("이미지를 넣어주세요");;
+              }),
+            SizedBox(height: 20.0,),
+            RaisedButton(
+              child: Text('Upload Image'),
+              color: Colors.lightBlue,
+              onPressed: () => uploadImage(path),
+            ),
           ],
         ),
       ),
     );
   }
-
 }
-
