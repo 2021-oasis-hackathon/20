@@ -1,5 +1,13 @@
+import 'dart:io';
+
+import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:funcoolsex/model.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:permission_handler/permission_handler.dart';
+
+import 'Bloc.dart';
 
 DatabaseReference userdb = new FirebaseDatabase().reference().child("user");
 DatabaseReference trableDB = new FirebaseDatabase().reference().child("trable");
@@ -52,3 +60,35 @@ void insertUser(KakaoUser kakaoUser) => userdb.child(kakaoUser.toString()).set(k
 
 ///유저를 교체하는 함수
 void updateUser(KakaoUser kakaoUser) => userdb.child(kakaoUser.name);
+
+///이미지를 저장시켜주는 함수 path는 맞게 줘야함.
+void uploadImage(String path) async {
+  await Firebase.initializeApp();
+  final _storage = FirebaseStorage.instance;
+  final _picker = ImagePicker();
+  PickedFile? image = null;
+  //Check Permissions
+  await Permission.photos.request();
+  var permissionStatus = await Permission.photos.status;
+  if (permissionStatus.isGranted){
+    //Select Image
+    image = await _picker.getImage(source: ImageSource.gallery);
+    var file = File(image.path);
+    if (image != null){
+      //Upload to Firebase
+      var snapshot = await _storage.ref()
+          .child('image/${path}/${image}')
+          .putFile(file)
+          .snapshot;
+      await Future.delayed(Duration(seconds: 2));
+      var downloadUrl = await snapshot.ref.getDownloadURL();
+      imageUrl = downloadUrl;
+      streamController.add(imageUrl);
+      print('save ${imageUrl}');
+    } else {
+      print('No Path Received');
+    }
+  } else {
+    print('Grant Permissions and try again');
+  }
+}

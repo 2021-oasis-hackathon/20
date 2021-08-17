@@ -1,15 +1,14 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:funcoolsex/Bloc.dart';
-import 'package:funcoolsex/main.dart';
-import 'package:funcoolsex/login_result.dart';
 import 'package:funcoolsex/model.dart';
 import '/mainScene.dart' as mytabs;
-
 // Import kakao sdk
 import 'package:kakao_flutter_sdk/auth.dart';
 import 'package:kakao_flutter_sdk/user.dart';
 import 'package:kakao_flutter_sdk/common.dart';
+
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -31,50 +30,31 @@ class _LoginState extends State<LoginScreen> {
     super.dispose();
   }
 
-  _initKakaoTalkInstalled() async {
-    final installed = await isKakaoTalkInstalled();
-    setState(() {
-      _isKakaoTalkInstalled = installed;
-      print(_isKakaoTalkInstalled);
-    });
-  }
-
-  bool _isKakaoTalkInstalled = true;
-
-  _issueAccessToken(String authCode) async {
-    try {
-      var token = await AuthApi.instance.issueAccessToken(authCode);
-      AccessTokenStore.instance.toStore(token);
-      User user = await UserApi.instance.me();
-      kakaoUser = new KakaoUser(user.kakaoAccount.email.toString(),
-          user.kakaoAccount.profile.toJson()['nickname'].toString(),
-          user.kakaoAccount.profile.toJson()['thumbnail_image_url'].toString());
-      Navigator.push(context,
-        MaterialPageRoute(builder: (context) => MaterialApp(
-            home: mytabs.MainScene()
-        )),);
-    } catch (e) {
-      print("error on issuing access token: $e");
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     // KaKao native app key
     KakaoContext.clientId = "fa6c6b63c924916251bb03ed19eaead8";
     // KaKao javascript key
     KakaoContext.javascriptClientId = "1ce23a8d8e007700c6366cfaa5b1704d";
-
     isKakaoTalkInstalled();
-
+    var item = [
+      'image/Login1.png',
+      'image/Login2.png',
+      'image/Login3.png',
+    ];
     return Scaffold(
       body: Center(
         child: Column(
         children: <Widget>[
-          Image(
-            width: 220,
-            height: 400,
-            image : AssetImage("image/kakaologin.png"),
+          CarouselSlider(
+            options: CarouselOptions(height: 400.0),
+            items: item.map((i) {
+              return Builder(
+                builder: (BuildContext context) {
+                  return Image.asset('${i}');
+                },
+              );
+            }).toList(),
           ),
           InkWell(
               child: Image.asset('image/kakaologin.png', width: 220, height: 40),
@@ -119,4 +99,32 @@ class _LoginState extends State<LoginScreen> {
       print(e);
     }
   }
+
+
+  _initKakaoTalkInstalled() async {
+    final installed = await isKakaoTalkInstalled();
+    setState(() {
+      _isKakaoTalkInstalled = installed;
+      print(_isKakaoTalkInstalled);
+    });
+  }
+  bool _isKakaoTalkInstalled = true;
+
+  _issueAccessToken(String authCode) async {
+    try {
+      var token = await AuthApi.instance.issueAccessToken(authCode);
+      AccessTokenStore.instance.toStore(token);
+      User user = await UserApi.instance.me();
+      kakaoUser = new KakaoUser(user.kakaoAccount.email.toString(),
+          user.kakaoAccount.profile.toJson()['nickname'].toString(),
+          user.kakaoAccount.profile.toJson()['thumbnail_image_url'].toString());
+      Navigator.push(context,
+        MaterialPageRoute(builder: (context) => MaterialApp(
+            home: mytabs.MainScene()
+        )),);
+    } catch (e) {
+      print("error on issuing access token: $e");
+    }
+  }
+
 }
