@@ -6,9 +6,6 @@ import 'login.dart';
 //import 'package:firebase_database/firebase_database.dart';
 //import 'firebase.dart';
 
-void main() => runApp(
-    MaterialApp(
-        // home: LoginScreen()
-        home: mytabs.MainScene()
-    )
-);
+void main() => runApp(MaterialApp(
+    // home: LoginScreen()
+    home: mytabs.MainScene()));
