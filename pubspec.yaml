@@ -40,6 +40,9 @@ dependencies:
   firebase_storage: ^5.2.0
   permission_handler: ^5.0.1+1
   cached_network_image: ^1.1.1
+  filter_list: ^0.0.9
+  flutter_swiper: ^1.1.6
+
 
 dev_dependencies:
   flutter_test:
@@ -58,11 +61,13 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - image/kakaologin.png
-    - image/Login1.png
-    - image/Login2.png
-    - image/Login3.png
-
+    - image/
+#    - image/kakaologin.png
+#    - image/Login1.png
+#    - image/Login2.png
+#    - image/Login3.png
+#    - image/LogoText.png
+#    - image/Logo.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

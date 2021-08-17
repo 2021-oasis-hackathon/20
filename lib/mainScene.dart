@@ -40,7 +40,7 @@ class MainSceneState extends State<MainScene> with SingleTickerProviderStateMixi
       body: TabBarView(
           controller: controller,                     // 컨트롤러 연결
           children: [
-            search.SearchWidget(),
+            search.secarchPage(),
             theme.Theme(),
             trend.TrendWidget(),
 

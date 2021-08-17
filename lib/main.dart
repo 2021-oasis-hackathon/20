@@ -8,7 +8,7 @@ import 'login.dart';
 
 void main() => runApp(
     MaterialApp(
-        home: LoginScreen()
-        // home: mytabs.MainScene()
+        // home: LoginScreen()
+        home: mytabs.MainScene()
     )
 );

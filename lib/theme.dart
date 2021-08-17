@@ -5,7 +5,16 @@ class Theme extends StatelessWidget {
   Widget build(BuildContext context){
     return Container(
       child: Center(
-          child:Text('GREEN', style: TextStyle(fontSize: 31, color: Colors.white))
+          child:GridView.count(
+            crossAxisCount: 2,
+            children: List.generate(100, (index) {
+              return Center(
+                child: Text(
+                  'Item $index',
+                ),
+              );
+            }),
+          ),
       ),
       color: Colors.green,
       margin: EdgeInsets.all(6.0),
