@@ -4,6 +4,7 @@ import 'package:funcoolsex/Bloc.dart';
 import 'package:funcoolsex/main.dart';
 import 'package:funcoolsex/login_result.dart';
 import 'package:funcoolsex/model.dart';
+import '/mainScene.dart' as mytabs;
 
 // Import kakao sdk
 import 'package:kakao_flutter_sdk/auth.dart';
@@ -50,7 +51,7 @@ class _LoginState extends State<LoginScreen> {
           user.kakaoAccount.profile.toJson()['thumbnail_image_url'].toString());
       Navigator.push(context,
         MaterialPageRoute(builder: (context) => MaterialApp(
-            home: MyTabs()
+            home: mytabs.MainScene()
         )),);
     } catch (e) {
       print("error on issuing access token: $e");
