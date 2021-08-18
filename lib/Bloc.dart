@@ -11,7 +11,10 @@ DatabaseReference trableDB =
     new FirebaseDatabase().reference().child(travelPath);
 var travelPath = "test";
 
-KakaoUser? kakaoUser = null;
+KakaoUser? kakaoUser = KakaoUser("email",
+    "name",
+    "https://www.kedglobal.com/data/ked/image/2021/06/15/ked202106150022.700x.0.jpg");
+// KakaoUser? kakaoUser = null;
 
 var imageUrl = null;
 
