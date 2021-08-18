@@ -3,6 +3,7 @@ import '/search.dart' as search;
 import '/theme_search.dart' as theme_search;
 import 'package:funcoolsex/theme_first.dart' as theme_first;
 import '/trend.dart' as trend;
+import 'model.dart';
 
 class MainScene extends StatefulWidget {
   @override
@@ -13,12 +14,10 @@ class MainSceneState extends State<MainScene>
     with SingleTickerProviderStateMixin {
   // 컨트롤러는 TabBar와 TabBarView 객체를 생성할 때 직접 전달
   late TabController controller;
-
-  // 객체가 위젯 트리에 추가될 때 호출되는 함수. 즉, 그려지기 전에 탭바 컨트롤러 샛성.
+   // 객체가 위젯 트리에 추가될 때 호출되는 함수. 즉, 그려지기 전에 탭바 컨트롤러 샛성.
   @override
   void initState() {
     super.initState();
-
     // SingleTickerProviderStateMixin를 상속 받아서
     // vsync에 this 형태로 전달해야 애니메이션이 정상 처리된다.
     controller = TabController(vsync: this, length: 4);
@@ -41,7 +40,8 @@ class MainSceneState extends State<MainScene>
           children: [
             search.secarchPage(),
             trend.TrendWidget(),
-            theme_first.Theme1Widget()
+            theme_first.Theme1Widget(),
+            theme_first.Theme1Widget(),
           ]),
       bottomNavigationBar: Container(
         child: TabBar(controller: controller, // 컨트롤러 연결

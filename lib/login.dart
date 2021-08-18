@@ -45,6 +45,7 @@ class _LoginState extends State<LoginScreen> {
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment:MainAxisAlignment.center,
         children: <Widget>[
           CarouselSlider(
             options: CarouselOptions(height: 400.0),
