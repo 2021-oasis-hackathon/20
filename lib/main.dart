@@ -6,11 +6,9 @@ import 'Bloc.dart';
 import 'firebase.dart';
 
 void main() {
-
-runApp(MaterialApp(
+  runApp(MaterialApp(
 // home: travelHomePage()));
-home: mytabs.MainScene()));
+      home: mytabs.MainScene()));
 // home: fireBaseHomePage(title: 'text',)));
 // home:Player()));
 }
-

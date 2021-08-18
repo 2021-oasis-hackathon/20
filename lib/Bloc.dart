@@ -7,24 +7,59 @@ import 'package:just_audio/just_audio.dart';
 
 List<travel> trabelList = <travel>[];
 
-DatabaseReference trableDB = new FirebaseDatabase().reference().child(travelPath);
+DatabaseReference trableDB =
+    new FirebaseDatabase().reference().child(travelPath);
 var travelPath = "test";
-
 
 KakaoUser? kakaoUser = null;
 
 var imageUrl = null;
 
 StreamController<String> ImageStreamController = StreamController<String>();
-final StreamSubscription subscription = ImageStreamController.stream.listen((data) => imageUrl = data);
+final StreamSubscription subscription =
+    ImageStreamController.stream.listen((data) => imageUrl = data);
 
 StreamController<List> TravelWidgetStreamController = StreamController<List>();
-final StreamSubscription travelsubscription = TravelWidgetStreamController.stream.listen((data) =>
-items = data);
-
+final StreamSubscription travelsubscription =
+    TravelWidgetStreamController.stream.listen((data) => items = data);
 
 List<String> countryList = [
-  "강진","고창","고흥","곡성","광양","광주","구례","군산","김제","나주","남원","담양","목포","무안","무주","보성","부안","순창","순천","신안","여수","영암","영광","완도","완주","익산","임실","장성","장수","장흥","전주","정읍","진도","해남","화순","함평"
+  "강진",
+  "고창",
+  "고흥",
+  "곡성",
+  "광양",
+  "광주",
+  "구례",
+  "군산",
+  "김제",
+  "나주",
+  "남원",
+  "담양",
+  "목포",
+  "무안",
+  "무주",
+  "보성",
+  "부안",
+  "순창",
+  "순천",
+  "신안",
+  "여수",
+  "영암",
+  "영광",
+  "완도",
+  "완주",
+  "익산",
+  "임실",
+  "장성",
+  "장수",
+  "장흥",
+  "전주",
+  "정읍",
+  "진도",
+  "해남",
+  "화순",
+  "함평"
 ];
 
 List<String>? selectedCountryList = [];
@@ -35,7 +70,6 @@ var searchItemList = <String>[
   'image/search3.png',
   'image/search4.png',
 ];
-
 
 var items = [
   // travel("lee1","test1","경주","test",
