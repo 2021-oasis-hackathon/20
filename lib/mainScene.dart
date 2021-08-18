@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:funcoolsex/mypage/profile_page_main.dart';
+import 'package:kakao_flutter_sdk/all.dart';
 import '/search.dart' as search;
 import '/theme_search.dart' as theme_search;
 import 'package:funcoolsex/theme_first.dart' as theme_first;
 import '/trend.dart' as trend;
+import 'package:funcoolsex/mypage/profile_page_main.dart' as profile;
+
+
+
+
 
 class MainScene extends StatefulWidget {
   @override
@@ -41,7 +48,8 @@ class MainSceneState extends State<MainScene>
           children: [
             search.secarchPage(),
             trend.TrendWidget(),
-            theme_first.Theme1Widget()
+            theme_first.Theme1Widget(),
+            profile.Profile()
           ]),
       bottomNavigationBar: Container(
         child: TabBar(controller: controller, // 컨트롤러 연결
