@@ -24,8 +24,8 @@ class travelState extends State<travelHomePage> {
     return Scaffold(
         appBar: AppBar(
           title: new Text("검색결과", style: TextStyle(
-              color: Color.fromRGBO(255, 0, 0, 1.0),
               fontFamily: 'Noto Sans',
+              color: Colors.black,
               fontSize: 18,
               letterSpacing: -0.2,
               fontWeight: FontWeight.normal,
@@ -61,10 +61,16 @@ class travelState extends State<travelHomePage> {
         });
         return (widgetList.length != 0) ?
             ListView(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(30),
               children: widgetList,
             )
-            : Center(child: Text("해당하는 여행지가 없습니다 ㅠㅠ"));
+            : Center(child: Text("해당하는 여행지가 없습니다 ㅠㅠ", style: TextStyle(
+        fontFamily: 'Noto Sans',
+            color: Colors.black,
+            fontSize: 18,
+            letterSpacing: -0.2,
+            fontWeight: FontWeight.normal,
+            height: 1)));
       },
     );
   }

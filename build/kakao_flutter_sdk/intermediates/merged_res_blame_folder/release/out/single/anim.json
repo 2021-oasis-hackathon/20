@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/b5acbaaff5ebc6feb852e584cda0bf93/appcompat-1.0.2/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/b5acbaaff5ebc6feb852e584cda0bf93/appcompat-1.0.2/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/b5acbaaff5ebc6feb852e584cda0bf93/appcompat-1.0.2/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/res/merged/release/anim/abc_tooltip_exit.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/b5acbaaff5ebc6feb852e584cda0bf93/appcompat-1.0.2/res/anim/abc_tooltip_exit.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/b5acbaaff5ebc6feb852e584cda0bf93/appcompat-1.0.2/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/res/merged/release/anim/abc_tooltip_enter.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/b5acbaaff5ebc6feb852e584cda0bf93/appcompat-1.0.2/res/anim/abc_tooltip_enter.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/b5acbaaff5ebc6feb852e584cda0bf93/appcompat-1.0.2/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/b5acbaaff5ebc6feb852e584cda0bf93/appcompat-1.0.2/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/b5acbaaff5ebc6feb852e584cda0bf93/appcompat-1.0.2/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/b5acbaaff5ebc6feb852e584cda0bf93/appcompat-1.0.2/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/b5acbaaff5ebc6feb852e584cda0bf93/appcompat-1.0.2/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/b5acbaaff5ebc6feb852e584cda0bf93/appcompat-1.0.2/res/anim/abc_grow_fade_in_from_bottom.xml"
+    }
+]

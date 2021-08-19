@@ -83,7 +83,18 @@ class _LoginState extends State<LoginScreen> {
       }
       await _issueAccessToken(code);
     } catch (e) {
+      print(e.hashCode);
       print(e);
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(
+        content: Text("에러가 있어 디폴트 사용자로 로그인 합니다."),
+      ));
+      Future.delayed(const Duration(milliseconds: 2000), () {
+        Navigator.push(context,
+          MaterialPageRoute(builder: (context) => MaterialApp(
+              home: mytabs.MainScene()
+          )),);
+      });
     }
   }
 
@@ -96,8 +107,20 @@ class _LoginState extends State<LoginScreen> {
         await retryAfterUserAgrees(["account_email"]);
       }
       await _issueAccessToken(code);
-    } catch (e) {
-      print(e);
+
+    }catch (e) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(
+        content: Text("에러가 있어 디폴트 사용자로 로그인 합니다."),
+      ));
+      Future.delayed(const Duration(milliseconds: 2000), () {
+        Navigator.push(context,
+          MaterialPageRoute(builder: (context) => MaterialApp(
+              home: mytabs.MainScene()
+          )),);
+      });
+
+
     }
   }
 
@@ -114,6 +137,7 @@ class _LoginState extends State<LoginScreen> {
   _issueAccessToken(String authCode) async {
     try {
       var token = await AuthApi.instance.issueAccessToken(authCode);
+
       AccessTokenStore.instance.toStore(token);
       User user = await UserApi.instance.me();
       kakaoUser = new KakaoUser(user.kakaoAccount.email.toString(),

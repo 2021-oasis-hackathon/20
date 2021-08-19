@@ -225,7 +225,16 @@ class placeState extends State<placeHomePage> {
                         width: widthSize,
                         height: heightMax * 0.8,
                         child: Center(
-                          child: Text(place.explanation),
+                          child: Text(place.explanation,
+                            textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  color: Color.fromRGBO(165, 163, 163, 1),
+                                  fontFamily: 'Noto Sans',
+                                  fontSize: 16,
+                                  letterSpacing: -0.2,
+                                  fontWeight: FontWeight.normal,
+                                  height: 1)
+                          ),
                         ),),
                       //구분선
                       Divider(

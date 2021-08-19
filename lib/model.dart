@@ -231,10 +231,12 @@ Widget PlaceWidget(travelPlace plac) {
 Widget TravelWidget(dynamic conxtext,travel tr){
   String intro = tr.intro;
   String imagUrl = tr.imageUrl;
+  var maxHeigh = MediaQuery.of(conxtext).size.height;
+  var maxWidth = MediaQuery.of(conxtext).size.width;
   print(tr.toJson());
   return Container(
-      height: 200,
-      width: 300,
+      height: maxWidth * 0.4,
+      width: maxWidth * 0.9,
       alignment: Alignment.center,
       decoration: BoxDecoration(
       borderRadius: BorderRadius.only(
@@ -262,8 +264,8 @@ Widget TravelWidget(dynamic conxtext,travel tr){
                 child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Container(
-                  height: 200,
-                  width: 300,
+                  height: maxWidth * 0.38,
+                  width: maxWidth * 0.85,
                   child:
                   FittedBox(
                     fit: BoxFit.fitWidth,
@@ -287,10 +289,11 @@ Widget TravelWidget(dynamic conxtext,travel tr){
                   style: TextStyle(
                       color: Color.fromRGBO(255, 255, 255, 1.0),
                       fontFamily: 'Noto Sans',
-                      fontSize: 20,
+                      fontSize: 18,
                       letterSpacing: -0.2,
                       fontWeight: FontWeight.normal,
-                      height: 1)
+                      height: 1),
+
               ),
             ),
           ],

@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/leejeongseok/development/FunCoolSexy/build/audio_session/intermediates/incremental/mergeReleaseResources/merged.dir/values-en-rXC/values-en-rXC.xml",
+            "map": [
+                {
+                    "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8ab167b912f29168ebf06edd382af952/jetified-media2-session-1.1.0-alpha01/res/values-en-rXC/values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,262,461,659,872",
+                        "endColumns": "206,198,197,212,231",
+                        "endOffsets": "257,456,654,867,1099"
+                    }
+                },
+                {
+                    "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/c0741527c360327ad89f36209f57413d/core-1.1.0/res/values-en-rXC/values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "202",
+                        "endOffsets": "253"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "1104",
+                        "endColumns": "202",
+                        "endOffsets": "1302"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/leejeongseok/development/FunCoolSexy/build/audio_session/intermediates/res/merged/release/values-en-rXC/values-en-rXC.xml",
+            "map": [
+                {
+                    "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8ab167b912f29168ebf06edd382af952/jetified-media2-session-1.1.0-alpha01/res/values-en-rXC/values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,262,461,659,872",
+                        "endColumns": "206,198,197,212,231",
+                        "endOffsets": "257,456,654,867,1099"
+                    }
+                },
+                {
+                    "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/c0741527c360327ad89f36209f57413d/core-1.1.0/res/values-en-rXC/values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "202",
+                        "endOffsets": "253"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "1104",
+                        "endColumns": "202",
+                        "endOffsets": "1302"
+                    }
+                }
+            ]
+        }
+    ]
+}
