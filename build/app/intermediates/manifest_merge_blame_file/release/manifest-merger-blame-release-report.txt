@@ -1,0 +1,306 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.funcoolsex"
+4    android:versionCode="4001"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->[:image_picker] /Users/leejeongseok/development/FunCoolSexy/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:7:5-80
+11-->[:image_picker] /Users/leejeongseok/development/FunCoolSexy/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:7:22-77
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->[:image_picker] /Users/leejeongseok/development/FunCoolSexy/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:8:5-81
+12-->[:image_picker] /Users/leejeongseok/development/FunCoolSexy/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:8:22-78
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.android.exoplayer:exoplayer-core:2.13.1] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/a5af4a4d4a7167e910be9d7f99ce4221/jetified-exoplayer-core-2.13.1/AndroidManifest.xml:24:5-79
+13-->[com.google.android.exoplayer:exoplayer-core:2.13.1] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/a5af4a4d4a7167e910be9d7f99ce4221/jetified-exoplayer-core-2.13.1/AndroidManifest.xml:24:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-storage:19.2.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/25062f142fb2894148c04b0c737f2281/jetified-firebase-storage-19.2.0/AndroidManifest.xml:27:5-67
+14-->[com.google.firebase:firebase-storage:19.2.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/25062f142fb2894148c04b0c737f2281/jetified-firebase-storage-19.2.0/AndroidManifest.xml:27:22-64
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[com.google.android.gms:play-services-measurement-api:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/9102eb3d1d52a2c377e069ec25b2ed73/jetified-play-services-measurement-api-17.6.0/AndroidManifest.xml:24:5-68
+15-->[com.google.android.gms:play-services-measurement-api:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/9102eb3d1d52a2c377e069ec25b2ed73/jetified-play-services-measurement-api-17.6.0/AndroidManifest.xml:24:22-65
+16    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+16-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:26:5-110
+16-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:26:22-107
+17
+18    <application
+18-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:4:4-50:19
+19        android:name="androidx.multidex.MultiDexApplication"
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.1.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/c0741527c360327ad89f36209f57413d/core-1.1.0/AndroidManifest.xml:24:18-86
+21        android:icon="@mipmap/ic_launcher"
+21-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:6:9-43
+22        android:label="funcoolsex"
+22-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:5:9-35
+23        android:usesCleartextTraffic="true" >
+23-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:7:8-43
+24        <activity
+24-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:8:9-36:20
+25            android:name="com.example.funcoolsex.MainActivity"
+25-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:9:13-41
+26            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+26-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:12:13-163
+27            android:hardwareAccelerated="true"
+27-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:13:13-47
+28            android:launchMode="singleTop"
+28-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:10:13-43
+29            android:theme="@style/LaunchTheme"
+29-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:11:13-47
+30            android:windowSoftInputMode="adjustResize" >
+30-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:14:13-55
+31
+32            <!--
+33                 Specifies an Android theme to apply to this Activity as soon as
+34                 the Android process has started. This theme is visible to the user
+35                 while the Flutter UI initializes. After that, this theme continues
+36                 to determine the Window background behind the Flutter UI.
+37            -->
+38            <meta-data
+38-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:19:13-22:17
+39                android:name="io.flutter.embedding.android.NormalTheme"
+39-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:20:15-70
+40                android:resource="@style/NormalTheme" />
+40-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:21:15-52
+41            <!--
+42                 Displays an Android View that continues showing the launch screen
+43                 Drawable until Flutter paints its first frame, then this splash
+44                 screen fades out. A splash screen is useful to avoid any visual
+45                 gap between the end of Android's launch screen and the painting of
+46                 Flutter's first frame.
+47            -->
+48            <meta-data
+48-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:28:13-31:17
+49                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+49-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:29:15-79
+50                android:resource="@drawable/launch_background" />
+50-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:30:15-61
+51
+52            <intent-filter>
+52-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:32:13-35:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:33:17-68
+53-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:33:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:34:17-76
+55-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:34:27-74
+56            </intent-filter>
+57        </activity>
+58        <!--
+59             Don't delete the meta-data below.
+60             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+61        -->
+62        <meta-data
+62-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:39:9-41:33
+63            android:name="flutterEmbedding"
+63-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:40:13-44
+64            android:value="2" />
+64-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:41:13-30
+65
+66        <activity
+66-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:42:8-49:19
+67            android:name="com.kakao.sdk.flutter.AuthCodeCustomTabsActivity"
+67-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:42:18-81
+68            android:exported="true"
+68-->[:kakao_flutter_sdk] /Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/library_manifest/release/AndroidManifest.xml:15:13-36
+69            android:launchMode="singleTask"
+69-->[:kakao_flutter_sdk] /Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/library_manifest/release/AndroidManifest.xml:16:13-44
+70            android:theme="@style/TransparentCompat" >
+70-->[:kakao_flutter_sdk] /Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/library_manifest/release/AndroidManifest.xml:17:13-53
+71            <intent-filter android:label="flutter_web_auth" >
+71-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:43:12-48:28
+71-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:43:27-59
+72                <action android:name="android.intent.action.VIEW" />
+72-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:44:16-68
+72-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:44:24-65
+73
+74                <category android:name="android.intent.category.DEFAULT" />
+74-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:45:16-75
+74-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:45:26-72
+75                <category android:name="android.intent.category.BROWSABLE" />
+75-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:46:16-77
+75-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:46:26-74
+76
+77                <data
+77-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:47:16-99
+78                    android:host="oauth"
+78-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:47:77-97
+79                    android:scheme="kakaofa6c6b63c924916251bb03ed19eaead8" />
+79-->/Users/leejeongseok/development/FunCoolSexy/android/app/src/main/AndroidManifest.xml:47:22-76
+80            </intent-filter>
+81        </activity>
+82
+83        <service
+83-->[:firebase_database] /Users/leejeongseok/development/FunCoolSexy/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
+84            android:name="com.google.firebase.components.ComponentDiscoveryService"
+84-->[:firebase_database] /Users/leejeongseok/development/FunCoolSexy/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:8:18-89
+85            android:directBootAware="true"
+85-->[com.google.firebase:firebase-common:19.3.1] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8d38e9e5545b1f47a51f8d58e131eb9c/jetified-firebase-common-19.3.1/AndroidManifest.xml:35:13-43
+86            android:exported="false" >
+86-->[com.google.firebase:firebase-storage:19.2.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/25062f142fb2894148c04b0c737f2281/jetified-firebase-storage-19.2.0/AndroidManifest.xml:32:13-37
+87            <meta-data
+87-->[:firebase_database] /Users/leejeongseok/development/FunCoolSexy/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+88                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+88-->[:firebase_database] /Users/leejeongseok/development/FunCoolSexy/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:10:17-127
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[:firebase_database] /Users/leejeongseok/development/FunCoolSexy/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+90            <meta-data
+90-->[:firebase_storage] /Users/leejeongseok/development/FunCoolSexy/build/firebase_storage/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+91                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+91-->[:firebase_storage] /Users/leejeongseok/development/FunCoolSexy/build/firebase_storage/intermediates/library_manifest/release/AndroidManifest.xml:10:17-126
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[:firebase_storage] /Users/leejeongseok/development/FunCoolSexy/build/firebase_storage/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+93            <meta-data
+93-->[:firebase_core] /Users/leejeongseok/development/FunCoolSexy/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+94                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+94-->[:firebase_core] /Users/leejeongseok/development/FunCoolSexy/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:10:17-124
+95                android:value="com.google.firebase.components.ComponentRegistrar" />
+95-->[:firebase_core] /Users/leejeongseok/development/FunCoolSexy/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+96            <meta-data
+96-->[com.google.firebase:firebase-storage:19.2.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/25062f142fb2894148c04b0c737f2281/jetified-firebase-storage-19.2.0/AndroidManifest.xml:33:13-35:85
+97                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+97-->[com.google.firebase:firebase-storage:19.2.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/25062f142fb2894148c04b0c737f2281/jetified-firebase-storage-19.2.0/AndroidManifest.xml:34:17-107
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[com.google.firebase:firebase-storage:19.2.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/25062f142fb2894148c04b0c737f2281/jetified-firebase-storage-19.2.0/AndroidManifest.xml:35:17-82
+99            <meta-data
+99-->[com.google.firebase:firebase-database:19.5.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/516745574aa3ac30a6829ef591eff370/jetified-firebase-database-19.5.0/AndroidManifest.xml:32:13-34:85
+100                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+100-->[com.google.firebase:firebase-database:19.5.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/516745574aa3ac30a6829ef591eff370/jetified-firebase-database-19.5.0/AndroidManifest.xml:33:17-109
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[com.google.firebase:firebase-database:19.5.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/516745574aa3ac30a6829ef591eff370/jetified-firebase-database-19.5.0/AndroidManifest.xml:34:17-82
+102            <meta-data
+102-->[com.google.android.gms:play-services-measurement-api:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/9102eb3d1d52a2c377e069ec25b2ed73/jetified-play-services-measurement-api-17.6.0/AndroidManifest.xml:30:13-32:85
+103                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+103-->[com.google.android.gms:play-services-measurement-api:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/9102eb3d1d52a2c377e069ec25b2ed73/jetified-play-services-measurement-api-17.6.0/AndroidManifest.xml:31:17-139
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.android.gms:play-services-measurement-api:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/9102eb3d1d52a2c377e069ec25b2ed73/jetified-play-services-measurement-api-17.6.0/AndroidManifest.xml:32:17-82
+105            <meta-data
+105-->[com.google.firebase:firebase-installations:16.3.2] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/77092a8dc6a9e713d358dca6df376fed/jetified-firebase-installations-16.3.2/AndroidManifest.xml:17:13-19:85
+106                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+106-->[com.google.firebase:firebase-installations:16.3.2] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/77092a8dc6a9e713d358dca6df376fed/jetified-firebase-installations-16.3.2/AndroidManifest.xml:18:17-127
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[com.google.firebase:firebase-installations:16.3.2] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/77092a8dc6a9e713d358dca6df376fed/jetified-firebase-installations-16.3.2/AndroidManifest.xml:19:17-82
+108        </service>
+109
+110        <provider
+110-->[:image_picker] /Users/leejeongseok/development/FunCoolSexy/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:9-19:20
+111            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+111-->[:image_picker] /Users/leejeongseok/development/FunCoolSexy/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:12:13-82
+112            android:authorities="com.example.funcoolsex.flutter.image_provider"
+112-->[:image_picker] /Users/leejeongseok/development/FunCoolSexy/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:13-74
+113            android:exported="false"
+113-->[:image_picker] /Users/leejeongseok/development/FunCoolSexy/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:14:13-37
+114            android:grantUriPermissions="true" >
+114-->[:image_picker] /Users/leejeongseok/development/FunCoolSexy/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:15:13-47
+115            <meta-data
+115-->[:image_picker] /Users/leejeongseok/development/FunCoolSexy/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:16:13-18:75
+116                android:name="android.support.FILE_PROVIDER_PATHS"
+116-->[:image_picker] /Users/leejeongseok/development/FunCoolSexy/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:17:17-67
+117                android:resource="@xml/flutter_image_picker_file_paths" />
+117-->[:image_picker] /Users/leejeongseok/development/FunCoolSexy/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:18:17-72
+118        </provider>
+119
+120        <activity
+120-->[:kakao_flutter_sdk] /Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:20
+121            android:name="com.kakao.sdk.flutter.TalkAuthCodeActivity"
+121-->[:kakao_flutter_sdk] /Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/library_manifest/release/AndroidManifest.xml:9:13-70
+122            android:launchMode="singleTask"
+122-->[:kakao_flutter_sdk] /Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/library_manifest/release/AndroidManifest.xml:10:13-44
+123            android:theme="@style/TransparentCompat" >
+123-->[:kakao_flutter_sdk] /Users/leejeongseok/development/FunCoolSexy/build/kakao_flutter_sdk/intermediates/library_manifest/release/AndroidManifest.xml:11:13-53
+124        </activity>
+125        <activity
+125-->[:flutter_inappwebview] /Users/leejeongseok/development/FunCoolSexy/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:8:9-11:47
+126            android:name="com.pichillilorenzo.flutter_inappwebview.InAppBrowser.InAppBrowserActivity"
+126-->[:flutter_inappwebview] /Users/leejeongseok/development/FunCoolSexy/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:9:13-102
+127            android:configChanges="orientation|screenSize"
+127-->[:flutter_inappwebview] /Users/leejeongseok/development/FunCoolSexy/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:10:13-59
+128            android:theme="@style/AppTheme" />
+128-->[:flutter_inappwebview] /Users/leejeongseok/development/FunCoolSexy/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:11:13-44
+129        <activity
+129-->[:flutter_inappwebview] /Users/leejeongseok/development/FunCoolSexy/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:12:9-15:55
+130            android:name="com.pichillilorenzo.flutter_inappwebview.ChromeCustomTabs.ChromeCustomTabsActivity"
+130-->[:flutter_inappwebview] /Users/leejeongseok/development/FunCoolSexy/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:13:13-110
+131            android:configChanges="orientation|screenSize"
+131-->[:flutter_inappwebview] /Users/leejeongseok/development/FunCoolSexy/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:14:13-59
+132            android:theme="@style/ThemeTransparent" />
+132-->[:flutter_inappwebview] /Users/leejeongseok/development/FunCoolSexy/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:15:13-52
+133
+134        <receiver android:name="com.pichillilorenzo.flutter_inappwebview.ChromeCustomTabs.ActionBroadcastReceiver" />
+134-->[:flutter_inappwebview] /Users/leejeongseok/development/FunCoolSexy/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:17:9-118
+134-->[:flutter_inappwebview] /Users/leejeongseok/development/FunCoolSexy/build/flutter_inappwebview/intermediates/library_manifest/release/AndroidManifest.xml:17:19-115
+135
+136        <activity
+136-->[:url_launcher] /Users/leejeongseok/development/FunCoolSexy/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:8:9-11:74
+137            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+137-->[:url_launcher] /Users/leejeongseok/development/FunCoolSexy/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:9:13-74
+138            android:exported="false"
+138-->[:url_launcher] /Users/leejeongseok/development/FunCoolSexy/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:10:13-37
+139            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+139-->[:url_launcher] /Users/leejeongseok/development/FunCoolSexy/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:11:13-71
+140        <activity
+140-->[com.google.android.gms:play-services-base:17.0.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/39294fe6f6894bccb09c63369ee6ed60/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+141            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+141-->[com.google.android.gms:play-services-base:17.0.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/39294fe6f6894bccb09c63369ee6ed60/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+142            android:exported="false"
+142-->[com.google.android.gms:play-services-base:17.0.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/39294fe6f6894bccb09c63369ee6ed60/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+143            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+143-->[com.google.android.gms:play-services-base:17.0.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/39294fe6f6894bccb09c63369ee6ed60/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+144
+145        <provider
+145-->[com.google.firebase:firebase-common:19.3.1] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8d38e9e5545b1f47a51f8d58e131eb9c/jetified-firebase-common-19.3.1/AndroidManifest.xml:26:9-31:39
+146            android:name="com.google.firebase.provider.FirebaseInitProvider"
+146-->[com.google.firebase:firebase-common:19.3.1] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8d38e9e5545b1f47a51f8d58e131eb9c/jetified-firebase-common-19.3.1/AndroidManifest.xml:27:13-77
+147            android:authorities="com.example.funcoolsex.firebaseinitprovider"
+147-->[com.google.firebase:firebase-common:19.3.1] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8d38e9e5545b1f47a51f8d58e131eb9c/jetified-firebase-common-19.3.1/AndroidManifest.xml:28:13-72
+148            android:directBootAware="true"
+148-->[com.google.firebase:firebase-common:19.3.1] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8d38e9e5545b1f47a51f8d58e131eb9c/jetified-firebase-common-19.3.1/AndroidManifest.xml:29:13-43
+149            android:exported="false"
+149-->[com.google.firebase:firebase-common:19.3.1] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8d38e9e5545b1f47a51f8d58e131eb9c/jetified-firebase-common-19.3.1/AndroidManifest.xml:30:13-37
+150            android:initOrder="100" />
+150-->[com.google.firebase:firebase-common:19.3.1] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8d38e9e5545b1f47a51f8d58e131eb9c/jetified-firebase-common-19.3.1/AndroidManifest.xml:31:13-36
+151
+152        <receiver
+152-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:29:9-33:20
+153            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+153-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:30:13-85
+154            android:enabled="true"
+154-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:31:13-35
+155            android:exported="false" >
+155-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:32:13-37
+156        </receiver>
+157
+158        <service
+158-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:35:9-38:40
+159            android:name="com.google.android.gms.measurement.AppMeasurementService"
+159-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:36:13-84
+160            android:enabled="true"
+160-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:37:13-35
+161            android:exported="false" />
+161-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:38:13-37
+162        <service
+162-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:39:9-43:72
+163            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+163-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:40:13-87
+164            android:enabled="true"
+164-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:41:13-35
+165            android:exported="false"
+165-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:42:13-37
+166            android:permission="android.permission.BIND_JOB_SERVICE" />
+166-->[com.google.android.gms:play-services-measurement:17.6.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/439e705b2304268753e39ffa9738d058/jetified-play-services-measurement-17.6.0/AndroidManifest.xml:43:13-69
+167
+168        <meta-data
+168-->[com.google.android.gms:play-services-basement:17.0.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/4a0974a9ac11a93a3ac0a5cc3dafabcb/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+169            android:name="com.google.android.gms.version"
+169-->[com.google.android.gms:play-services-basement:17.0.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/4a0974a9ac11a93a3ac0a5cc3dafabcb/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+170            android:value="@integer/google_play_services_version" />
+170-->[com.google.android.gms:play-services-basement:17.0.0] /Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/4a0974a9ac11a93a3ac0a5cc3dafabcb/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+171    </application>
+172
+173</manifest>

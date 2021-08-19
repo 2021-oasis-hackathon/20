@@ -1,14 +1,14 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:funcoolsex/SearchResult.dart';
 import 'package:kakao_flutter_sdk/all.dart';
-import 'dart:math' as math;
-import 'dart:math' as math;
-import 'dart:math' as math;
-import 'dart:math' as math;
 import 'Bloc.dart';
 import 'package:filter_list/filter_list.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+
+import 'firebaseQuery.dart';
+import 'model.dart';
 
 class secarchPage extends StatefulWidget {
   secarchPage({Key? key}) : super(key: key);
@@ -18,9 +18,9 @@ class secarchPage extends StatefulWidget {
 
 class SearchState extends State<secarchPage> {
   var containerSize;
-
   @override
   Widget build(BuildContext context) {
+    print("23 ${selectedCountryList}");
     containerSize = MediaQuery.of(context).size.height * 0.10;
     return Stack(children: <Widget>[
       Row(
@@ -95,18 +95,11 @@ class SearchState extends State<secarchPage> {
         //이미지 돌림판
         Swiper(
           itemBuilder: (BuildContext context, int index) {
-            return Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(15.0),
-              ),
-              elevation: 10,
-              child: Column(
-                children: <Widget>[
-                  Image.asset(
-                    searchItemList[index],
-                    fit: BoxFit.fill,
-                  ),
-                ],
+            return ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Image.asset(
+                searchItemList[index],
+                fit: BoxFit.fill,
               ),
             );
           },
@@ -121,8 +114,8 @@ class SearchState extends State<secarchPage> {
 
   void OpenFilterDialog() async {
     await FilterListDialog.display<String>(context,
-        listData: countList,
-        selectedListData: selectedCountList,
+        listData: countryList,
+        selectedListData: selectedCountryList,
         height: 480,
         headlineText: "가자?",
         searchFieldHintText: "어디로?", choiceChipLabel: (item) {
@@ -132,7 +125,7 @@ class SearchState extends State<secarchPage> {
     }, onItemSearch: (list, text) {
       if (list!.any(
           (element) => element.toLowerCase().contains(text.toLowerCase()))) {
-        return list!
+        return list
             .where(
                 (element) => element.toLowerCase().contains(text.toLowerCase()))
             .toList();
@@ -142,122 +135,18 @@ class SearchState extends State<secarchPage> {
     }, onApplyButtonClick: (list) {
       if (list != null) {
         setState(() {
-          selectedCountList = List.from(list);
+          selectedCountryList = List.from(list);
+          items = ReadAllTrableDataToList();
+
+          Navigator.of(context, rootNavigator: true).pop();
+
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => travelHomePage()),
+          );
         });
       }
-      //차후에 네비게이션 이동시킴
-      Navigator.pop(context);
     });
   }
+
 }
-              // P
-              // Positioned(
-              //     top: 181.24710083007812,
-              //     left: 56,
-              //     child: Container(
-              //         width: 302,
-              //         height: 482,
-              //         decoration: BoxDecoration(
-              //           color: Color.fromRGBO(255, 255, 255, 1),
-              //         ),
-              //         child: Stack(
-              //             children: <Widget>[
-              //               Positioned(
-              //                   top: 0,
-              //                   left: 0,
-              //                   child: Container(
-              //                       width: 302,
-              //                       height: 482,
-              //                       decoration: BoxDecoration(
-              //                         borderRadius: BorderRadius.only(
-              //                           topLeft: Radius.circular(15),
-              //                           topRight: Radius.circular(15),
-              //                           bottomLeft: Radius.circular(15),
-              //                           bottomRight: Radius.circular(15),
-              //                         ),
-              //                         color: Color.fromRGBO(202, 202, 202, 1),
-              //                       )
-              //                   )
-              //               ), Positioned(
-              //                   top: 0,
-              //                   left: 0,
-              //                   child: Container(
-              //                       width: 295,
-              //                       height: 476,
-              //                       decoration: BoxDecoration(
-              //                         borderRadius: BorderRadius.only(
-              //                           topLeft: Radius.circular(15),
-              //                           topRight: Radius.circular(15),
-              //                           bottomLeft: Radius.circular(15),
-              //                           bottomRight: Radius.circular(15),
-              //                         ),
-              //                         boxShadow: [BoxShadow(
-              //                             color: Color.fromRGBO(0, 0, 0, 0.25),
-              //                             offset: Offset(0, 4),
-              //                             blurRadius: 4
-              //                         )
-              //                         ],
-              //                         image: DecorationImage(
-              //                             image: AssetImage(
-              //                                 'assets/images/Rectangle25.png'),
-              //                             fit: BoxFit.fitWidth
-              //                         ),
-              //                       )
-              //                   )
-              //               ), Positioned(
-              //                   top: 428,
-              //                   left: 121,
-              //                   child: Container(
-              //                       width: 6,
-              //                       height: 6,
-              //                       decoration: BoxDecoration(
-              //                         color: Color.fromRGBO(196, 196, 196, 1),
-              //                         borderRadius: BorderRadius.all(
-              //                             Radius.elliptical(6, 6)),
-              //                       )
-              //                   )
-              //               ), Positioned(
-              //                   top: 428,
-              //                   left: 135,
-              //                   child: Container(
-              //                       width: 6,
-              //                       height: 6,
-              //                       decoration: BoxDecoration(
-              //                         color: Color.fromRGBO(196, 196, 196, 1),
-              //                         borderRadius: BorderRadius.all(
-              //                             Radius.elliptical(6, 6)),
-              //                       )
-              //                   )
-              //               ), Positioned(
-              //                   top: 428,
-              //                   left: 149,
-              //                   child: Container(
-              //                       width: 6,
-              //                       height: 6,
-              //                       decoration: BoxDecoration(
-              //                         color: Color.fromRGBO(196, 196, 196, 1),
-              //                         borderRadius: BorderRadius.all(
-              //                             Radius.elliptical(6, 6)),
-              //                       )
-              //                   )
-              //               ), Positioned(
-              //                   top: 428,
-              //                   left: 161,
-              //                   child: Container(
-              //                       width: 6,
-              //                       height: 6,
-              //                       decoration: BoxDecoration(
-              //                         color: Color.fromRGBO(196, 196, 196, 1),
-              //                         borderRadius: BorderRadius.all(
-              //                             Radius.elliptical(6, 6)),
-              //                       )
-              //                   )
-              //               ),
-              //             ]
-              //         )
-              //     )
-              // ),
-//             ]
-//         )
-//     );
-//   }

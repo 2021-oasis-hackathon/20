@@ -22,7 +22,7 @@ void insertTrableData(travel trable) => trableDB.child(trable.toString()).set(tr
 // void insertTrable(trable trable) => trableDB.child(trable.toString()).set(trable.toJson());
 
 ///모든 travel 데이터를 읽어서 list로 반환
-List ReadAllTrableDataToList(){
+List<travel> ReadAllTrableDataToList(){
   List<travel> list = <travel>[];
   trableDB.once().then((var snapshot) {
     Map<String, dynamic> mapOfMaps = Map<String, dynamic>.from(snapshot.value);
@@ -83,7 +83,7 @@ void uploadImage(String path) async {
       await Future.delayed(Duration(seconds: 2));
       var downloadUrl = await snapshot.ref.getDownloadURL();
       imageUrl = downloadUrl;
-      streamController.add(imageUrl);
+      ImageStreamController.add(imageUrl);
       print('save ${imageUrl}');
     } else {
       print('No Path Received');

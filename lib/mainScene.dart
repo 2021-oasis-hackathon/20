@@ -8,9 +8,6 @@ import '/trend.dart' as trend;
 import 'package:funcoolsex/mypage/profile_page_main.dart' as profile;
 
 
-
-
-
 class MainScene extends StatefulWidget {
   @override
   MainSceneState createState() => MainSceneState();
@@ -28,7 +25,7 @@ class MainSceneState extends State<MainScene>
 
     // SingleTickerProviderStateMixin를 상속 받아서
     // vsync에 this 형태로 전달해야 애니메이션이 정상 처리된다.
-    controller = TabController(vsync: this, length: 4);
+    controller = TabController(vsync: this, length: 2);
   }
 
   // initState 함수의 반대.
@@ -47,21 +44,21 @@ class MainSceneState extends State<MainScene>
           controller: controller, // 컨트롤러 연결
           children: [
             search.secarchPage(),
-            trend.TrendWidget(),
-            theme_first.Theme1Widget(),
+            // trend.TrendWidget(),
+            // theme_first.Theme1Widget(),
             profile.Profile()
           ]),
       bottomNavigationBar: Container(
         child: TabBar(controller: controller, // 컨트롤러 연결
             tabs: [
               // 아이콘은 글자 수 같은 걸로 선택. 의미 없음. 제목에 들어간 색상은 중요.
-              Tab(icon: Icon(Icons.card_travel), text: '검색'),
-              Tab(
-                icon: Icon(Icons.donut_small),
-                text: '테마',
-              ),
-              Tab(icon: Icon(Icons.table_chart), text: '트렌드'),
-              Tab(icon: Icon(Icons.table_chart), text: '마이페이지')
+              Tab(icon: Image.asset("image/SearchIcon.png")),
+              // Tab(
+              //   icon: Icon(Icons.donut_small),
+              //   text: '테마',
+              // ),
+              // Tab(icon: Icon(Icons.table_chart), text: '트렌드'),
+              Tab(icon: Image.asset("image/MyPage.png"))
             ]),
         color: Colors.black12,
       ),

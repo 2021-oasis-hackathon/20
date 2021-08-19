@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/just_audio/intermediates/res/merged/release/drawable-anydpi-v21/media_session_service_notification_ic_pause.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8ab167b912f29168ebf06edd382af952/jetified-media2-session-1.1.0-alpha01/res/drawable-anydpi-v21/media_session_service_notification_ic_pause.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/just_audio/intermediates/res/merged/release/drawable-anydpi-v21/media_session_service_notification_ic_music_note.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8ab167b912f29168ebf06edd382af952/jetified-media2-session-1.1.0-alpha01/res/drawable-anydpi-v21/media_session_service_notification_ic_music_note.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/just_audio/intermediates/res/merged/release/drawable-anydpi-v21/media_session_service_notification_ic_skip_to_next.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8ab167b912f29168ebf06edd382af952/jetified-media2-session-1.1.0-alpha01/res/drawable-anydpi-v21/media_session_service_notification_ic_skip_to_next.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/just_audio/intermediates/res/merged/release/drawable-anydpi-v21/media_session_service_notification_ic_skip_to_previous.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8ab167b912f29168ebf06edd382af952/jetified-media2-session-1.1.0-alpha01/res/drawable-anydpi-v21/media_session_service_notification_ic_skip_to_previous.xml"
+    },
+    {
+        "merged": "/Users/leejeongseok/development/FunCoolSexy/build/just_audio/intermediates/res/merged/release/drawable-anydpi-v21/media_session_service_notification_ic_play.xml",
+        "source": "/Users/leejeongseok/.gradle/caches/transforms-2/files-2.1/8ab167b912f29168ebf06edd382af952/jetified-media2-session-1.1.0-alpha01/res/drawable-anydpi-v21/media_session_service_notification_ic_play.xml"
+    }
+]
